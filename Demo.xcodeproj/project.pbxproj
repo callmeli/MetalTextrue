@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048D67581F8B1853003DFC99 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D67571F8B1853003DFC99 /* UIImage.swift */; };
+		048D67601F8B7D1C003DFC99 /* input.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 048D675F1F8B7D1C003DFC99 /* input.jpg */; };
 		049E2BA71F7C9FEA003410FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E2BA61F7C9FEA003410FC /* AppDelegate.swift */; };
 		049E2BA91F7C9FEA003410FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E2BA81F7C9FEA003410FC /* ViewController.swift */; };
 		049E2BAC1F7C9FEA003410FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049E2BAA1F7C9FEA003410FC /* Main.storyboard */; };
 		049E2BAE1F7C9FEA003410FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049E2BAD1F7C9FEA003410FC /* Assets.xcassets */; };
 		049E2BB11F7C9FEA003410FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049E2BAF1F7C9FEA003410FC /* LaunchScreen.storyboard */; };
+		049E2BBB1F7CD1C8003410FC /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 049E2BBA1F7CD1C8003410FC /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		048D67571F8B1853003DFC99 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		048D675F1F8B7D1C003DFC99 /* input.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = input.jpg; sourceTree = "<group>"; };
 		049E2BA31F7C9FEA003410FC /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049E2BA61F7C9FEA003410FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		049E2BA81F7C9FEA003410FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		049E2BAD1F7C9FEA003410FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049E2BB01F7C9FEA003410FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		049E2BB21F7C9FEA003410FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049E2BBA1F7CD1C8003410FC /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		049E2BA51F7C9FEA003410FC /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				048D675F1F8B7D1C003DFC99 /* input.jpg */,
 				049E2BA61F7C9FEA003410FC /* AppDelegate.swift */,
 				049E2BA81F7C9FEA003410FC /* ViewController.swift */,
 				049E2BAA1F7C9FEA003410FC /* Main.storyboard */,
 				049E2BAD1F7C9FEA003410FC /* Assets.xcassets */,
 				049E2BAF1F7C9FEA003410FC /* LaunchScreen.storyboard */,
 				049E2BB21F7C9FEA003410FC /* Info.plist */,
+				049E2BBA1F7CD1C8003410FC /* Shader.metal */,
+				048D67571F8B1853003DFC99 /* UIImage.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -123,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048D67601F8B7D1C003DFC99 /* input.jpg in Resources */,
 				049E2BB11F7C9FEA003410FC /* LaunchScreen.storyboard in Resources */,
 				049E2BAE1F7C9FEA003410FC /* Assets.xcassets in Resources */,
 				049E2BAC1F7C9FEA003410FC /* Main.storyboard in Resources */,
@@ -136,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049E2BBB1F7CD1C8003410FC /* Shader.metal in Sources */,
+				048D67581F8B1853003DFC99 /* UIImage.swift in Sources */,
 				049E2BA91F7C9FEA003410FC /* ViewController.swift in Sources */,
 				049E2BA71F7C9FEA003410FC /* AppDelegate.swift in Sources */,
 			);
@@ -277,8 +289,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QL9U7V4N42;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cmcm.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elasticimagesoftware.Hello1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,8 +305,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QL9U7V4N42;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cmcm.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elasticimagesoftware.Hello1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
